@@ -23,7 +23,7 @@ KEY = '1689920088:AAEWH9vem9qTxjxLxkGpNI5cyg0oKjPOTMg'
 #             print('---------------------------')
 
 
-
+print('bot started')
 
 def start_command(update, context):
     update.message.reply_text('Welcome, to Cowin-BGM notification')
@@ -47,7 +47,7 @@ def main():
 
     dp.add_error_handler(error)
 
-    updater.start_polling()
+    updater.start_polling(timeout = 20)
     updater.idle()
 
 main()
